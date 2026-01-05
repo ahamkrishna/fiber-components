@@ -1,3 +1,18 @@
+/**
+ * Fiber Optic Component SVG Assets
+ * 
+ * This module centralizes all SVG asset imports for fiber optic components.
+ * Each component has two variants: normal and flipped orientation.
+ * 
+ * Asset Organization:
+ * - LC Connectors: Standard duplex connectors
+ * - MPO Connectors: Multi-fiber push-on connectors (8, 12, 16, 24 fiber)
+ * - Transition Modules: MPO-to-LC breakout modules
+ * - Conversion Modules: MPO-to-MPO fiber count converters
+ * - Splice Components: Fusion splice connections
+ * - Receivers: Start and end point transceivers
+ */
+
 import LCOM5 from "@/assets/svg/LC-OM5-LC.svg";
 import LCOM5Flipped from "@/assets/svg/LC-OM5-LC-Flipped.svg";
 
@@ -48,9 +63,15 @@ import ReceiverRight from "@/assets/svg/Receiver-Right.svg";
 
 import type { ComponentAsset } from "@/types/component";
 
-// Ordered to match CommScope site grouping:
-// Row 1: MPO-LC Transition Modules (4) + Conversion Modules (5)
-// Row 2: Standard Connectors (5) + Splice (1)
+/**
+ * Component Assets Array
+ * 
+ * Ordered to match the CommScope reference site grouping:
+ * - Row 1 (indices 0-8): MPO-LC Transition Modules (4) + Conversion Modules (5)
+ * - Row 2 (indices 9-14): Standard Connectors (5) + Splice (1)
+ * 
+ * This ordering ensures the palette displays components in the correct layout.
+ */
 export const COMPONENT_ASSETS: ComponentAsset[] = [
   // Row 1: Transition Modules (MPO to LC)
   {
